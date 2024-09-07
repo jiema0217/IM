@@ -1,0 +1,21 @@
+service_name: im_user_info
+log_level: 0
+rsa_ak: 3ef9a6948fb0413facaec9fbfac58809
+port: 8080
+
+mysql:
+  im_user_info:
+    write:
+      host: localhost
+      port: 3306
+      user: root
+      password: irYTpE11xOKnPqTftSH2tz3mN+E5VyhRi+oLe1aVo00XgLxQVufDkqsRdebDILZDBpVLdgUzZb66JTUaPVni8Q==
+      database: im_user_info
+      charset: utf8mb4
+    read:
+      - host: localhost
+        port: 3306
+        user: root
+        password: irYTpE11xOKnPqTftSH2tz3mN+E5VyhRi+oLe1aVo00XgLxQVufDkqsRdebDILZDBpVLdgUzZb66JTUaPVni8Q==
+        database: im_user_info
+        charset: utf8mb4
